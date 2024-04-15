@@ -36,11 +36,3 @@
     transform: rotate(360deg);
   }
 }
-
-.photo
-{
-  width: 80px;
-  display: flex;
-  padding: 25 25  75 75;
-  
-}

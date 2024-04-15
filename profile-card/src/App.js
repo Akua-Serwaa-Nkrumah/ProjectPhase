@@ -1,16 +1,15 @@
-import React from "react";
-import ak from './components/Ak_avatar.jpg' 
-import "./App.css"
+// import logo from './logo.svg'; 
+import './App.css';
+import UserProfileCard from './components/UserProfileCard/UserProfileCard';
 
-function App () {
+function App() {
   return (
-    <div>
+    <div className="App">
+      <UserProfileCard/>
+      <UserProfileCard/>
 
-      
     </div>
-  )
-
+  );
 }
 
-
-export default App
+export default App;
