@@ -1,70 +1,21 @@
-# Getting Started with Create React App
+<bold> Counter App </bold>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Description
 
-## Available Scripts
+This App is a basic counter app that performs increment, decrement and reset functionalities.
 
-In the project directory, you can run:
+1. Increment button, on click, increments the count value by 1.
 
-### `npm start`
+2. Decrement button, on click, decrements the count value by 1. Here, the threshold is 0 and hence count value does not go below 0.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+3. The Reset value resets the count to 0.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Things to NOTE:
 
-### `npm test`
+1. The useState Hook : It is used to create a state variable,here counter, and its corresponding setter function, setCounter. counter holds the current value of the counter, and calling setCounter allows you to update its value. By using useState, you can manage and update the state of the counter in a functional component.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. The useEffect Hook: used to perform side effects in a functional component. In this case, it is used to update the document title whenever the counter value changes. By providing a dependency array [counter], the effect callback function will be executed whenever the counter value changes. This keeps the document title in sync with the counter value.
 
-### `npm run build`
+3. The useRef Hook: is used to create a mutable ref object. Here, three instances of useRef are used to create references for the buttons: incrementButtonRef, decrementButtonRef, and resetButtonRef. These refs can be assigned to the ref attribute of the corresponding buttons to access their underlying DOM elements. It allows you to interact with the buttons programmatically, such as accessing their properties or attaching event listeners. 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+4. The CounterApp component is a functional component that encapsulates the counter functionality. It renders the counter value, along with three buttons: "Increment," "Decrement," and "Reset." The increment function is called when the "Increment" button is clicked, the decrement function is called when the "Decrement" button is clicked, and the reset function is called when the "Reset" button is clicked. These functions update the counter state variable accordingly.
