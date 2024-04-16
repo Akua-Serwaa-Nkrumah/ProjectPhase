@@ -19,3 +19,5 @@ Things to NOTE:
 3. The useRef Hook: is used to create a mutable ref object. Here, three instances of useRef are used to create references for the buttons: incrementButtonRef, decrementButtonRef, and resetButtonRef. These refs can be assigned to the ref attribute of the corresponding buttons to access their underlying DOM elements. It allows you to interact with the buttons programmatically, such as accessing their properties or attaching event listeners. 
 
 4. The CounterApp component is a functional component that encapsulates the counter functionality. It renders the counter value, along with three buttons: "Increment," "Decrement," and "Reset." The increment function is called when the "Increment" button is clicked, the decrement function is called when the "Decrement" button is clicked, and the reset function is called when the "Reset" button is clicked. These functions update the counter state variable accordingly.
+
+Enjoy using the app.
