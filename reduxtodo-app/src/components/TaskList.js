@@ -35,10 +35,10 @@ const TaskList = ({ tasks, updateTask, removeTask, setFilter }) => {
                         >
                             {task.title}
                         </span>
-                        <button onClick={() => handleTaskStatusChange(task.id)}>
+                        <button onClick={() => handleTaskStatusChange(task.id)} class={`task-status ${task.completed ? 'completed' : 'incomplete'}`}>
                             {task.completed ? 'Mark Incomplete' : 'Mark Complete'}
                         </button>
-                        <button onClick={() => handleTaskDeletion(task.id)}  style = {{background :'#d32f2f'}}>Delete</button>
+                        <button onClick={() => handleTaskDeletion(task.id)} style={{ background: '#d32f2f' }}>Delete</button>
                     </li>
                 ))}
             </ul>
