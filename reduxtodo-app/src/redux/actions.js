@@ -1,3 +1,5 @@
+//when called pushes (action_type and task/task_id depecnding on action_type) to the reducer
+
 export const addTask = (task) => ({
     type: 'ADD_TASK',
     payload: task,

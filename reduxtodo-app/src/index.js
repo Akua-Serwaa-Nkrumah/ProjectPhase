@@ -13,3 +13,8 @@ ReactDOM.render(
   </Provider>,
   document.getElementById('root')
 );
+
+```
+The Provider store wraps the entire application and allows the components to access the Redux store. The store is passed as a prop to the Provider component, to enable the components access the state and dispatch actions.
+
+```
