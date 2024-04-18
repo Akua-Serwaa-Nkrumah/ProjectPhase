@@ -1,0 +1,117 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #2196f3;
+  background-color: rgb(0, 0, 0);
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.heading
+{
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  width: 35%; 
+}
+
+
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+input{
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+textarea {
+  resize: vertical;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+button {
+  padding: 10px;
+  background-color: #556d9e;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 90%;
+  margin: auto;
+}
+
+li {
+  background-color: #dfdcec;
+  padding: 20px;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  margin-top: 70px;
+  border-radius: 4px;
+  width: 80%;
+  /* text-overflow: clip;
+  word-wrap: break-word; */
+  word-break: break-word;
+}
+
+
+li h3 {
+  margin: 0;
+  font-size: 20px;
+  color: #000000;
+}
+
+li p {
+  margin-top: 10px;
+  color: #080055;
+  font-size: 16px;
+  display: flex;
+}
+
+li button {
+  margin-right: 5px;
+  margin-top: 15px;
+  padding: 5px 10px;
+  background-color: #e53935;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+li button.edit {
+  background-color: #0c6928;
+}
+
+li button:hover {
+  opacity: 0.8;
+}
